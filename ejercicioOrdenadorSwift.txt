@@ -1,0 +1,53 @@
+class Procesador{
+    var frecuencia: Int = 0
+    var nucleos: Int = 0
+    var fabricante = ""
+    var hilos: Int = 0
+}
+
+class Ram{
+    var fabricante = ""
+    var tamanio = 0
+    var RGB = false
+}
+
+class Almacenamiento{
+    var tipo = ""
+    var capacidad = 0
+    var fabricante = ""
+   
+}
+class Ordenador{
+    var RAM = Ram()
+    var cpu = Procesador()
+    var almac = Almacenamiento()
+    var Precio = 0
+    var nombre = ""
+    var grafica = Grafica()
+   
+}
+class Grafica{
+    var TDP = 0
+    var vram = 0
+    var cores = 0
+    var velocidad = 0
+}
+
+var pc = Ordenador()
+pc.cpu.fabricante = "AMD"
+pc.cpu.frecuencia = 4000
+pc.cpu.nucleos = 6
+pc.cpu.hilos = 12
+pc.RAM.fabricante = "Corsair"
+pc.RAM.tamanio = 16
+pc.RAM.RGB = false
+pc.almac.tipo = "SSD"
+pc.almac.capacidad = 512
+pc.almac.fabricante = "WesternDigital"
+pc.grafica.TDP=144
+pc.grafica.vram = 8
+pc.grafica.cores=1200
+pc.grafica.velocidad=1340
+pc.Precio = 1500
+
+dump(pc)
